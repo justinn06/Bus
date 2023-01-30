@@ -14,14 +14,14 @@ public class Main {
         //System.out.println(bus1.toString());
 
         Bus bus2 = new Bus(1001, driver2, new BusRoute(431, "East End", "West End"));
-        System.out.println(bus2.toString());
+        //System.out.println(bus2.toString());
 
         Bus[] buses = new Bus[3];
         buses[0] = new Bus(1010, driver1, new BusRoute(521, "Piazza Dante", "Strada Pecetto"));
         buses[1] = new Bus(1014, driver2, new BusRoute(340, "Via Vincenzo", "Via Bellini"));
         buses[2] = new Bus(1015, driver3, new BusRoute(411, "Strada Alba", "Piazza Bianca"));
 
-        //showBusDrivers(buses, 500);
+        showBusDrivers(buses, 500);
 
         //printBusInfo(bus1);
 
