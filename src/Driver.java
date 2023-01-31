@@ -2,12 +2,13 @@ public class Driver {
     private String firstName;
     private String lastName;
     private int number;
-    int driverNum = 0;
+    static int driverNum = 0;
 
     public Driver(String f, String l, int n) {
         this.firstName = f;
         this.lastName = l;
         this.number = n;
+        driverNum = driverNum + 1;
     }
 
     public String getFirstName() {
@@ -21,6 +22,6 @@ public class Driver {
     }
 
     public String toString() {
-        return "Driver [First Name: " + getFirstName() + ", Last Name: " + getLastName() + ", Employee Number: " + getNumber() + "]";
+        return "Driver [First Name: " + getFirstName() + ", Last Name: " + getLastName() + ", Employee Number: " + getNumber() + "]" + " Total number of drivers is " + driverNum;
     }
 }
