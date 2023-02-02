@@ -21,11 +21,9 @@ public class Main {
         buses[1] = new Bus(1014, driver2, new BusRoute(340, "Via Vincenzo", "Via Bellini"));
         buses[2] = new Bus(1015, driver3, new BusRoute(411, "Strada Alba", "Piazza Bianca"));
 
-        //showBusDrivers(buses, 500);
+        showBusDrivers(buses, 500);
 
-        //printBusInfo(bus1);
-
-
+        System.out.println(bus1.printBusInfo());
 
     }
     static void showBusDrivers(Bus[] b, int n) {
@@ -37,9 +35,6 @@ public class Main {
         System.out.println(names);
     }
 
-    static void printBusInfo(Bus[] b) {
-        System.out.println(b.getDriver());
-        System.out.println(b.getRoute());
-    }
+
 
 }

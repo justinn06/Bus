@@ -28,6 +28,10 @@ public class Bus {
         return this.route;
     }
 
+    public String printBusInfo() {
+        return getDriver().getFirstName() + " " + getRoute().getStart();
+    }
+
     public String toString() {
         return "Bus [ID: " + getId() + ", " + getDriver().toString() + ", " + getRoute().toString() + "]";
     }
